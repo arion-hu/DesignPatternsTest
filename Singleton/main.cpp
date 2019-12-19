@@ -17,7 +17,7 @@ int main()
 	//Singleton::GetInstance().doSomething();  // OK
 	//Singleton single = Singleton::GetInstance();  // Error 不能编译通过
 
-    Singleton::GetInstance();
+    Singleton* instance = Singleton::GetInstance();
     //Singleton::GetInstance()->DestoryInstance();  // 手动释放
 
     return 0;
